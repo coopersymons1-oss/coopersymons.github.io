@@ -7,25 +7,28 @@
 </head>
 <body>
 
-<!-- Intro Animation -->
-<div id="intro">
-  <h1 class="logo">YOUR LOGO</h1>
+<!-- Boot Screen -->
+<div id="boot">
+  <div class="boot-text">Loading...</div>
 </div>
 
 <div class="ds">
 
   <!-- Top Screen -->
   <div class="screen top">
-    <div id="content">Welcome</div>
+    <div id="topContent" class="content active">Welcome</div>
   </div>
+
+  <!-- Hinge -->
+  <div class="hinge"></div>
 
   <!-- Bottom Screen -->
   <div class="screen bottom">
     <div class="apps">
-      <button onclick="openApp('photo')">📷</button>
-      <button onclick="openApp('video')">🎥</button>
-      <button onclick="openApp('about')">👤</button>
-      <button onclick="openApp('contact')">✉️</button>
+      <div class="app" onclick="openApp('photo')">📷<span>Photos</span></div>
+      <div class="app" onclick="openApp('video')">🎥<span>Video</span></div>
+      <div class="app" onclick="openApp('about')">👤<span>About</span></div>
+      <div class="app" onclick="openApp('contact')">✉️<span>Contact</span></div>
     </div>
   </div>
 
